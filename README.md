@@ -6,6 +6,8 @@ Edit `index.html` to update the introduction, research interests, papers, and co
 
 The portrait is `assets/anna-lyubarskaja.jpg`. Replace that image to update the photo.
 
+When changing `style.css`, update its `v=` value in the stylesheet link in `index.html` so returning visitors receive the new layout.
+
 GitHub Pages serves the root of the `main` branch. For a local preview, run `python3 -m http.server 8000` from this directory, then visit http://localhost:8000.
 
 The introduction and research interests are based on Anna's supplied poster bio. Paper titles, authors, dates, and links were checked against their arXiv records.
