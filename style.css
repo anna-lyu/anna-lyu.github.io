@@ -27,7 +27,7 @@ nav a:hover { color: var(--accent); text-decoration: underline; }
 .small-rule { display: inline-block; width: 25px; height: 1px; background: var(--accent); }
 h1 { margin-block: 18px 30px; font-family: var(--serif); font-size: clamp(38px, 5.3vw, 65px); font-weight: 400; line-height: 1.14; letter-spacing: -2px; }
 .name-period { color: var(--accent); }
-.intro-content { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 64px; align-items: start; }
+.intro-content { display: grid; grid-template-columns: minmax(0, 1fr) 200px; gap: 56px; align-items: start; }
 .bio { max-width: 740px; }
 .portrait { display: block; width: 100%; height: auto; border-radius: 8px; }
 .intro-lead { margin-bottom: 22px; font-family: var(--serif); font-size: 26px; line-height: 1.45; letter-spacing: -.3px; }
@@ -94,7 +94,7 @@ details > p { max-width: 700px; padding: 14px 19px; border-left: 2px solid #c6ce
 .skip-link:focus { top: 10px; }
 @media (max-width: 900px) {
   .page { width: calc(100% - 72px); }
-  .intro-content { grid-template-columns: minmax(0, 1fr) 200px; gap: 36px; }
+  .intro-content { grid-template-columns: minmax(0, 1fr) 180px; gap: 36px; }
   .intro-lead { font-size: 24px; }
   .interest-grid { gap: 26px; }
 }
@@ -106,8 +106,7 @@ details > p { max-width: 700px; padding: 14px 19px; border-left: 2px solid #c6ce
   .intro { padding-block: 45px 43px; }
   .eyebrow { font-size: 9px; letter-spacing: 1.2px; gap: 9px; }
   h1 { font-size: clamp(31px, 7.5vw, 48px); letter-spacing: -1.3px; margin-block: 19px 25px; }
-  .intro-content { grid-template-columns: 1fr; gap: 28px; }
-  .portrait { grid-row: 1; width: 180px; }
+  .intro-content { grid-template-columns: minmax(0, 1fr) 160px; gap: 28px; }
   .intro-lead { font-size: 23px; margin-bottom: 18px; }
   .bio > p:not(.intro-lead) { font-size: 14px; }
   .intro-links { gap: 24px; font-size: 12px; margin-top: 22px; }
@@ -136,6 +135,10 @@ details > p { max-width: 700px; padding: 14px 19px; border-left: 2px solid #c6ce
   .email-link { font-size: 22px; }
   .email-link > span { font-size: 14px; margin-left: 4px; }
   .site-footer { font-size: 9px; padding-block: 21px 28px; }
+}
+@media (max-width: 520px) {
+  .intro-content { grid-template-columns: 1fr; gap: 24px; }
+  .portrait { grid-row: 1; width: 160px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
